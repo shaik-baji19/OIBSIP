@@ -319,6 +319,6 @@ This research has strengthened my understanding of network security concepts and
 
 **Baji Shaik**
 
-Cybersecurity Intern
+Security Analyst Intern
 
 **Oasis Infobyte**
