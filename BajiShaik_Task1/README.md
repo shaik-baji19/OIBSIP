@@ -206,6 +206,6 @@ This task successfully demonstrated how to use Nmap to perform basic network rec
 
 **Baji Shaik**
 
-Cybersecurity Intern
+Security Analyst Intern
 
 Oasis Infobyte
