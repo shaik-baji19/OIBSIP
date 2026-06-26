@@ -2,7 +2,7 @@
 
 ## Objective
 
-The objective of this task was to perform a basic network scan using Nmap to identify open ports and running services on a local Windows 11 machine. This task also involved analyzing the discovered services, understanding their purpose, and documenting the findings professionally.
+The objective of this task was to perform a basic network scan using Nmap to identify open ports and running services on a local Windows 11 machine. This task also involved analyzing the discovered services and understanding their significance from a cybersecurity perspective.
 
 ---
 
@@ -14,19 +14,27 @@ The objective of this task was to perform a basic network scan using Nmap to ide
 
 ---
 
+## Prerequisites
+
+- Nmap installed on the system
+- Access to the target machine within the local network
+- Basic knowledge of networking concepts
+
+---
+
 ## Task Execution
 
 ### Step 1: Install Nmap
 
 Nmap was downloaded from the official Nmap website and installed successfully on the Windows 11 system using the default installation settings.
 
-> **Observation:** Nmap is an open-source network scanning tool widely used for network discovery and security auditing.
+> **Note:** Nmap is an open-source tool widely used for network discovery and security auditing.
 
 ---
 
-### Step 2: Verify Nmap Installation
+### Step 2: Verify Installation
 
-After installation, the following command was executed to verify that Nmap was installed successfully.
+The following command was executed to verify that Nmap was installed correctly.
 
 ```bash
 nmap --version
@@ -38,31 +46,13 @@ nmap --version
 Nmap version 7.99
 ```
 
-> **Observation:** The displayed version confirms that Nmap was installed successfully and is ready for use.
+> **Observation:** The displayed version confirms that Nmap was installed successfully.
 
 ---
 
-### Step 3: Identify the Target IP Address
+### Step 3: Perform Basic Network Scan
 
-Before performing the network scan, the IPv4 address of the local machine was identified using the following command.
-
-```bash
-ipconfig
-```
-
-**Target IPv4 Address**
-
-```text
-192.168.0.101
-```
-
-> **Observation:** This IPv4 address was used as the target for the Nmap scan.
-
----
-
-### Step 4: Perform a Basic Network Scan
-
-A basic TCP port scan was performed using the following command.
+A basic network scan was performed using the following command.
 
 ```bash
 nmap 192.168.0.101
@@ -72,7 +62,7 @@ nmap 192.168.0.101
 
 ---
 
-### Step 5: Perform Service Version Detection
+### Step 4: Perform Service Version Detection
 
 To identify the software versions running on the open ports, the following command was executed.
 
@@ -80,25 +70,25 @@ To identify the software versions running on the open ports, the following comma
 nmap -sV 192.168.0.101
 ```
 
-**Purpose:** The `-sV` option enables service version detection, allowing Nmap to determine the application or software running behind each open port.
+**Purpose:** The `-sV` option enables service version detection and attempts to determine the application or software running behind each open port.
 
 ---
 
-### Step 6: Save the Scan Results
+### Step 5: Save Scan Results
 
-The scan results were saved into a text file using the following command.
+The following command was used to save the scan results into a text file.
 
 ```bash
 nmap -sV 192.168.0.101 -oN nmap_scan_results.txt
 ```
 
-**Generated File**
+The scan output was successfully saved as:
 
 ```text
 nmap_scan_results.txt
 ```
 
-> **Observation:** Saving the scan results makes future analysis and documentation easier.
+> **Observation:** Saving the scan results allows future analysis and proper documentation.
 
 ---
 
@@ -107,10 +97,6 @@ nmap_scan_results.txt
 ### Nmap Installation Verification
 
 ![Nmap Version](screenshots/nmap_version.png)
-
-### IPv4 Address Identification
-
-![IP Configuration](screenshots/ipconfig.png)
 
 ### Basic Network Scan
 
@@ -125,10 +111,10 @@ nmap_scan_results.txt
 ## Scan Results
 
 | Port | State | Service | Version |
-|------|:-----:|---------|---------|
-| 135 | Open | MSRPC | Microsoft Windows RPC |
-| 139 | Open | NetBIOS-SSN | Microsoft Windows NetBIOS Session Service |
-| 445 | Open | Microsoft-DS | Windows File Sharing Service |
+| ---- | :---: | ------- | ------- |
+| 135 | Open | msrpc | Microsoft Windows RPC |
+| 139 | Open | netbios-ssn | Microsoft Windows NetBIOS Session Service |
+| 445 | Open | microsoft-ds | Windows File Sharing Service |
 | 2869 | Open | HTTP | Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP) |
 | 3306 | Open | MySQL | MySQL (Unauthorized) |
 
@@ -138,42 +124,42 @@ nmap_scan_results.txt
 
 ## Findings
 
-### Port 135 – MSRPC
+### Port 135 (MSRPC)
 
-- Used for Microsoft Remote Procedure Call (RPC).
-- Supports communication between Windows services.
-- Should be monitored for unauthorized remote access.
+- Used for Microsoft Remote Procedure Calls (RPC).
+- Enables communication between Windows services.
+- Should be monitored to prevent unauthorized remote access.
 
-### Port 139 – NetBIOS
+### Port 139 (NetBIOS)
 
 - Used for Windows file and printer sharing.
 - May expose shared resources if not properly secured.
 
-### Port 445 – SMB
+### Port 445 (SMB)
 
 - Used by the Server Message Block (SMB) protocol.
 - Supports Windows file sharing and network communication.
-- Keeping SMB updated is important because it has historically been targeted by malware.
+- Keeping SMB updated is important because it has historically been targeted by malware and ransomware.
 
-### Port 2869 – HTTP
+### Port 2869 (HTTP)
 
-- Used by Microsoft's HTTPAPI service.
-- Commonly associated with SSDP and UPnP device discovery.
+- Associated with Microsoft's HTTPAPI service.
+- Commonly used for SSDP and UPnP device discovery.
 
-### Port 3306 – MySQL
+### Port 3306 (MySQL)
 
-- Default port used by the MySQL Database Server.
+- Default port for the MySQL Database Server.
 - Indicates that a MySQL service is running.
-- Should be protected with strong credentials and restricted network access.
+- Should be secured using strong credentials and restricted access.
 
 ---
 
 ## Security Recommendations
 
 - Disable unused network services whenever possible.
-- Restrict SMB and NetBIOS access to trusted systems only.
-- Use strong authentication for MySQL and other database services.
-- Regularly update Windows and network services.
+- Restrict SMB and NetBIOS access to trusted systems.
+- Protect database services using strong authentication.
+- Regularly update Windows and all network services.
 - Configure firewall rules to block unnecessary ports.
 - Perform periodic network scans to identify newly exposed services.
 
@@ -184,12 +170,11 @@ nmap_scan_results.txt
 Through this task, I learned how to:
 
 - Install and verify Nmap on Windows.
-- Identify the IPv4 address of a target system.
 - Perform basic network scanning.
 - Detect service versions using Nmap.
 - Analyze open ports and the services running on them.
-- Understand the security implications of exposed services.
-- Document scan results in a professional GitHub repository.
+- Understand the security implications of exposed network services.
+- Document technical findings in a professional GitHub repository.
 
 ---
 
@@ -205,7 +190,6 @@ OIBSIP/
     │
     └── screenshots/
         ├── nmap_version.png
-        ├── ipconfig.png
         ├── basic_network_scan.png
         └── service_version_scan.png
 ```
@@ -222,6 +206,6 @@ This task successfully demonstrated how to use Nmap to perform basic network rec
 
 **Baji Shaik**
 
-Security Analyst Intern
+Cybersecurity Intern
 
 Oasis Infobyte
