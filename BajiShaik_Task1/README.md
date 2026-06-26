@@ -166,6 +166,6 @@ The Nmap scan successfully identified five open ports and their associated servi
 
 **Baji Shaik**
 
-Cybersecurity Internship Program
+Security Analyst Intern
 
 Oasis Infobyte
