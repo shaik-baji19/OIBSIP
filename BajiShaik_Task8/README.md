@@ -216,8 +216,6 @@ OIBSIP/
 └── BajiShaik_Task8/
     │
     ├── README.md
-    ├── network_capture.pcapng
-    │
     └── screenshots/
         ├── wireshark_home.png
         ├── network_capture.png
