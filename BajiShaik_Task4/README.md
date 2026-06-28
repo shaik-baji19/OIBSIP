@@ -1,25 +1,6 @@
 # Research on Common Network Security Threats
 
 > **Note:** This project was completed as part of the **Oasis Infobyte Cyber Security Internship**. It presents a research study on common network security threats, their impact, prevention techniques, and cybersecurity best practices.
-
----
-
-## Table of Contents
-
-- [Project Overview](#project-overview)
-- [Objective](#objective)
-- [Introduction](#introduction)
-- [Why Network Security Matters](#why-network-security-matters)
-- [Scope of the Research](#scope-of-the-research)
-- [Research Methodology](#research-methodology)
-- [Topics Covered](#topics-covered)
-- [Report Information](#report-information)
-- [Learning Outcomes](#learning-outcomes)
-- [Repository Structure](#repository-structure)
-- [View Full Report](#view-full-report)
-- [Conclusion](#conclusion)
-- [Author](#author)
-
 ---
 
 # Project Overview
