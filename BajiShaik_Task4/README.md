@@ -146,16 +146,15 @@ BajiShaik_Task4/
 ```
 
 ---
-
 # View Full Report
 
-The complete research report is available in:
+The complete research report is available here:
 
-**📄 `network_security_threats_report.md`**
+📄 **[Network Security Threats Report](network_security_threats_report.md)**
 
-All references used during this research are available in:
+The list of references used in this research is available here:
 
-**📚 `REFERENCES.md`**
+📚 **[References](REFERENCES.md)**
 
 ---
 
