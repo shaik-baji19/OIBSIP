@@ -104,10 +104,27 @@ network_capture.pcapng
 
 ## 📸 Screenshots
 
-- Wireshark Home Screen
-- Live Network Packet Capture
-- TCP Display Filter
-- TCP Packet Details
+### 1. Wireshark Home Screen
+
+![Wireshark Home](screenshots/wireshark_home.png)
+
+---
+
+### 2. Live Network Capture
+
+![Network Capture](screenshots/network_capture.png)
+
+---
+
+### 3. TCP Display Filter
+
+![TCP Packets](screenshots/tcp_packets.png)
+
+---
+
+### 4. Packet Details
+
+![Packet Details](screenshots/packet_details.png)
 
 ---
 
