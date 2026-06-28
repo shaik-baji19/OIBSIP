@@ -90,21 +90,15 @@ Each packet contains protocol information arranged in layers according to the TC
 
 ---
 
-### Step 7: Save the Capture
+### Step 7: Document the Results
 
-The captured traffic was saved in **PCAPNG** format for future analysis.
-
-**Generated File**
-
-```text
-network_capture.pcapng
-```
+The captured network traffic was analyzed using Wireshark, and screenshots were taken to document the packet capture process, TCP filtering, and packet inspection for the final report.
 
 ---
 
 ## 📸 Screenshots
 
-### 1. Wireshark Home Screen
+### 1. Wireshark Home Screen    
 
 ![Wireshark Home](screenshots/wireshark_home.png)
 
@@ -130,7 +124,7 @@ network_capture.pcapng
 
 ## 📊 Packet Analysis
 
-The captured network traffic contained multiple protocols.
+The captured network traffic contained multiple network protocols that were identified and analyzed using Wireshark.
 
 | Protocol | Description |
 |----------|-------------|
@@ -203,7 +197,7 @@ Through this task, I learned how to:
 - Filter captured packets using display filters.
 - Analyze TCP packets.
 - Understand different network protocols.
-- Save packet captures in PCAPNG format.
+- Inspect captured packets using Wireshark.
 - Document network analysis professionally.
 
 ---
@@ -216,20 +210,20 @@ OIBSIP/
 └── BajiShaik_Task8/
     │
     ├── README.md
+    │
     └── screenshots/
         ├── wireshark_home.png
         ├── network_capture.png
         ├── tcp_packets.png
         └── packet_details.png
 ```
-
 ---
 
 ## ✅ Conclusion
 
 This task successfully demonstrated the process of capturing and analyzing live network traffic using **Wireshark**. Different protocols such as **TCP, UDP, TLSv1.2, QUIC, mDNS, and IPv6** were identified during packet capture. Applying protocol filters and inspecting packet details provided valuable insight into how data travels across a network.
 
-Network packet analysis is an essential cybersecurity skill that helps security professionals monitor network activity, troubleshoot communication issues, detect suspicious behavior, and improve overall network security.
+Network packet analysis is an essential cybersecurity practice that enables security professionals to monitor network activity, troubleshoot communication issues, identify suspicious behavior, and strengthen overall network security.
 
 ---
 
