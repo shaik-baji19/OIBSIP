@@ -98,27 +98,14 @@ The captured network traffic was analyzed using Wireshark, and screenshots were 
 
 ## 📸 Screenshots
 
-### 1. Wireshark Home Screen    
+The screenshots demonstrating the task execution are available in the **screenshots/** directory.
 
-![Wireshark Home](screenshots/wireshark_home.png)
+The folder contains:
 
----
-
-### 2. Live Network Capture
-
-![Network Capture](screenshots/network_capture.png)
-
----
-
-### 3. TCP Display Filter
-
-![TCP Packets](screenshots/tcp_packets.png)
-
----
-
-### 4. Packet Details
-
-![Packet Details](screenshots/packet_details.png)
+- `wireshark_home.png` – Wireshark launched successfully.
+- `network_capture.png` – Live network traffic capture.
+- `tcp_packets.png` – TCP display filter applied.
+- `packet_details.png` – Detailed inspection of a selected TCP packet.
 
 ---
 
