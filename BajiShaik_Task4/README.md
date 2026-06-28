@@ -154,7 +154,7 @@ The complete research report is available here:
 
 The list of references used in this research is available here:
 
-📚 **[References](REFERENCES.md)**
+📚 **[References](references.md)**
 
 ---
 
