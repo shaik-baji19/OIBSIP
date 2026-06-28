@@ -155,4 +155,3 @@ Security Analyst Intern
 
 **Oasis Infobyte**
 
-This project was completed as part of the **Oasis Infobyte Cyber Security Internship Program**.
