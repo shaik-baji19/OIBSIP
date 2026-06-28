@@ -92,19 +92,15 @@ nmap_scan_results.txt
 
 ---
 
-## Screenshots
+## 📸 Screenshots
 
-### Nmap Installation Verification
+The screenshots demonstrating the task execution are available in the **screenshots/** directory.
 
-![Nmap Version](screenshots/nmap_version.png)
+The folder contains:
 
-### Basic Network Scan
-
-![Basic Network Scan](screenshots/basic_network_scan.png)
-
-### Service Version Detection
-
-![Service Version Scan](screenshots/service_version_scan.png)
+- `nmap_version.png` – Nmap installation verification.
+- `basic_network_scan.png` – Basic network scan results.
+- `service_version_scan.png` – Service version detection scan.
 
 ---
 
